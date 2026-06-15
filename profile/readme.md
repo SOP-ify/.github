@@ -10,7 +10,7 @@ file: README.md
 <p> This is our final project for Pijak x IBM SkillsBuild <p>
 
 <p align="center">
-  <img src="[Logo_.png](https://github.com/SOP-ify/.github/blob/main/Logo_.png)" width="300" height="300" alt="SOP-ify">
+  <img src="https://raw.githubusercontent.com/SOP-ify/.github/main/Logo_.png" width="300" height="300" alt="SOP-ify">
 </p>
 <p align="center" style="margin-bottom: 20px; line-height: 0.8;">
     <a href="[PLACEHOLDER_FIGMA_UI_UX_LINK]">UI/UX Design</a> &middot;
