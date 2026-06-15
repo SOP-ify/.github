@@ -66,7 +66,7 @@ You can find our relevant documentation at the following links:
 
 # The Gang
 
-| Name | Learning Path | id |
+| Name | Role | id |
 | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | Titasari Pratiwi | Cloud Computing | APC277D6X0010 |
 | Muhammad Favian Jiwani | Mobile Development | APC237D6Y0191 |
