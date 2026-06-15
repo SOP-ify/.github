@@ -1,3 +1,9 @@
+<!--
+file: README.md
+-> Menjelaskan project workspace SOP-ify
+-> Menyediakan arsitektur sistem, tim project plan, dan dokumentasi sub-proyek
+-->
+
 # SOP-ify - Capstone-Project-PJK-GM069
 ---------------
 <p> Hello folks! we are PJK-GM069! <p>
@@ -24,11 +30,11 @@ Below is the system architecture showing how the Flutter mobile application, Fas
 
 ```mermaid
 graph TD
-    subgraph Client Layer
+    subgraph ClientLayer ["Client Layer"]
         MobileApp["📱 Mobile App (Flutter)"]
     end
 
-    subgraph Service & AI Layer (GCP Cloud Run - GPU)
+    subgraph ServiceAILayer ["Service & AI Layer (GCP Cloud Run - GPU)"]
         BackendAPI["⚡ FastAPI Backend (Cloud Run - GPU)"]
         SOPGen["🧠 Gemma 2 2B LoRA"]
         STT["🎙️ Speech-to-Text (faster-whisper)"]
@@ -37,12 +43,12 @@ graph TD
         BackendAPI --> STT
     end
 
-    subgraph Data & Storage Layer
+    subgraph DataStorageLayer ["Data & Storage Layer"]
         MongoDB[("🍃 MongoDB Atlas")]
         GCS[("🪣 Google Cloud Storage")]
     end
 
-    subgraph Model Registry
+    subgraph ModelRegistry ["Model Registry"]
         HF["🤗 Hugging Face"]
     end
 
