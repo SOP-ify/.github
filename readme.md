@@ -28,8 +28,13 @@ graph TD
         MobileApp["📱 Mobile App (Flutter)"]
     end
 
-    subgraph Service Layer
-        BackendAPI["⚡ FastAPI Backend (Cloud Run)"]
+    subgraph Service & AI Layer (GCP Cloud Run - GPU)
+        BackendAPI["⚡ FastAPI Backend (Cloud Run - GPU)"]
+        SOPGen["🧠 Gemma 2 2B LoRA"]
+        STT["🎙️ Speech-to-Text (faster-whisper)"]
+        
+        BackendAPI --> SOPGen
+        BackendAPI --> STT
     end
 
     subgraph Data & Storage Layer
@@ -37,21 +42,14 @@ graph TD
         GCS[("🪣 Google Cloud Storage")]
     end
 
-    subgraph AI & Inference Layer
-        VertexAI["🧠 Vertex AI Endpoint / Hugging Face"]
-        STT["🎙️ Speech-to-Text (faster-whisper)"]
-    end
-
-    subgraph External Services
-        MermaidAPI["📊 mermaid.ink API"]
+    subgraph Model Registry
+        HF["🤗 Hugging Face"]
     end
 
     MobileApp <-->|HTTPS / REST API| BackendAPI
     BackendAPI <-->|Store/Retrieve User & SOP Data| MongoDB
     BackendAPI <-->|Upload Audio / Download SOP Docs| GCS
-    BackendAPI -->|Gemma 2 2B LoRA Inference| VertexAI
-    BackendAPI -->|Transcribe Audio| STT
-    BackendAPI -->|Generate Diagram PNG| MermaidAPI
+    SOPGen -.->|Download Model Adapter| HF
 ```
 
 ### Documentation
@@ -62,7 +60,7 @@ You can find our relevant documentation at the following links:
 
 # The Gang
 
-| Name | Learning Path | Contact |
+| Name | Learning Path | id |
 | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | Titasari Pratiwi | Cloud Computing | APC277D6X0010 |
 | Muhammad Favian Jiwani | Mobile Development | APC237D6Y0191 |
