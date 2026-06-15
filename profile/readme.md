@@ -61,8 +61,8 @@ graph TD
 ### Documentation
 You can find our relevant documentation at the following links:
 - [Machine Learning Documentation](https://github.com/SOP-ify/ML)
-- [Cloud Computing Documentation](https://github.com/SOP-ify/backend-api)
-- [Mobile Development Documentation](https://github.com/SOP-ify/mobile-sopify)
+- [Backend Documentation](https://github.com/SOP-ify/backend-api)
+- [Mobile Apps Documentation](https://github.com/SOP-ify/mobile-sopify)
 
 # The Gang
 
