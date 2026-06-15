@@ -14,7 +14,7 @@ file: README.md
 </p>
 <p align="center" style="margin-bottom: 20px; line-height: 0.8;">
     <a href="[PLACEHOLDER_FIGMA_UI_UX_LINK]">UI/UX Design</a> &middot;
-    <a href="[PLACEHOLDER_APK_DOWNLOAD_LINK]">APK Download</a> &middot;
+    <a href="https://github.com/SOP-ify/mobile-sopify/releases/download/v1.1/sopify.apk">APK Download</a> &middot;
     <a href="[PLACEHOLDER_PRESENTATION_SLIDE_LINK]">Presentation Slide</a> 
 </p>
 
